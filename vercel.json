@@ -1,0 +1,456 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "redirects": [
+    {
+      "source": "/o-nas",
+      "destination": "/ru/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/o-nas/",
+      "destination": "/ru/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/kontakty",
+      "destination": "/ru/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/kontakty/",
+      "destination": "/ru/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chaj",
+      "destination": "/ru/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chaj/",
+      "destination": "/ru/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shen-puer",
+      "destination": "/ru/catalog/?cat=puerh",
+      "statusCode": 301
+    },
+    {
+      "source": "/shen-puer/",
+      "destination": "/ru/catalog/?cat=puerh",
+      "statusCode": 301
+    },
+    {
+      "source": "/english",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/english/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/english-products",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/english-products/",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chto-takoe-ulun",
+      "destination": "/ru/blog/chto-takoe-ulun/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chto-takoe-ulun/",
+      "destination": "/ru/blog/chto-takoe-ulun/",
+      "statusCode": 301
+    },
+    {
+      "source": "/svyaz-mezhdu-stressom-zdorovem-kozhi-i-ezhednevnymi-ritualami",
+      "destination": "/ru/blog/svyaz-mezhdu-stressom-zdorovem-kozhi-i-ezhednevnymi-ritualami/",
+      "statusCode": 301
+    },
+    {
+      "source": "/svyaz-mezhdu-stressom-zdorovem-kozhi-i-ezhednevnymi-ritualami/",
+      "destination": "/ru/blog/svyaz-mezhdu-stressom-zdorovem-kozhi-i-ezhednevnymi-ritualami/",
+      "statusCode": 301
+    },
+    {
+      "source": "/taivanskii-chai-regiony-osobennosti-i-pryamye-postavki-ot-fermerov",
+      "destination": "/ru/blog/taivanskii-chai-regiony-osobennosti-i-pryamye-postavki-ot-fermerov/",
+      "statusCode": 301
+    },
+    {
+      "source": "/taivanskii-chai-regiony-osobennosti-i-pryamye-postavki-ot-fermerov/",
+      "destination": "/ru/blog/taivanskii-chai-regiony-osobennosti-i-pryamye-postavki-ot-fermerov/",
+      "statusCode": 301
+    },
+    {
+      "source": "/vostochnaya-krasavica",
+      "destination": "/ru/catalog/oriental-beauty/",
+      "statusCode": 301
+    },
+    {
+      "source": "/vostochnaya-krasavica/",
+      "destination": "/ru/catalog/oriental-beauty/",
+      "statusCode": 301
+    },
+    {
+      "source": "/baochzhun",
+      "destination": "/ru/catalog/baozhong/",
+      "statusCode": 301
+    },
+    {
+      "source": "/baochzhun/",
+      "destination": "/ru/catalog/baozhong/",
+      "statusCode": 301
+    },
+    {
+      "source": "/legendarnyj-don-din-hram-oblakov",
+      "destination": "/ru/catalog/dong-ding-cloud-temple/",
+      "statusCode": 301
+    },
+    {
+      "source": "/legendarnyj-don-din-hram-oblakov/",
+      "destination": "/ru/catalog/dong-ding-cloud-temple/",
+      "statusCode": 301
+    },
+    {
+      "source": "/foshoushan-ulun-fushoushan-",
+      "destination": "/ru/catalog/fushoushan-oolong/",
+      "statusCode": 301
+    },
+    {
+      "source": "/foshoushan-ulun-fushoushan-/",
+      "destination": "/ru/catalog/fushoushan-oolong/",
+      "statusCode": 301
+    },
+    {
+      "source": "/foshoushan-ulun-fushoushan-1",
+      "destination": "/ru/catalog/fushoushan-oolong/",
+      "statusCode": 301
+    },
+    {
+      "source": "/foshoushan-ulun-fushoushan-1/",
+      "destination": "/ru/catalog/fushoushan-oolong/",
+      "statusCode": 301
+    },
+    {
+      "source": "/temnyj-ulun-legendy-imperatora",
+      "destination": "/ru/catalog/oolong-emperor-legends/",
+      "statusCode": 301
+    },
+    {
+      "source": "/temnyj-ulun-legendy-imperatora/",
+      "destination": "/ru/catalog/oolong-emperor-legends/",
+      "statusCode": 301
+    },
+    {
+      "source": "/temnyj-ulun-legendy-imperatora1",
+      "destination": "/ru/catalog/oolong-emperor-legends/",
+      "statusCode": 301
+    },
+    {
+      "source": "/temnyj-ulun-legendy-imperatora1/",
+      "destination": "/ru/catalog/oolong-emperor-legends/",
+      "statusCode": 301
+    },
+    {
+      "source": "/temnyj-ulun-oliver-stoun",
+      "destination": "/ru/catalog/oolong-oliver-stone/",
+      "statusCode": 301
+    },
+    {
+      "source": "/temnyj-ulun-oliver-stoun/",
+      "destination": "/ru/catalog/oolong-oliver-stone/",
+      "statusCode": 301
+    },
+    {
+      "source": "/temnyj-ulun-oliver-stoun1",
+      "destination": "/ru/catalog/oolong-oliver-stone/",
+      "statusCode": 301
+    },
+    {
+      "source": "/temnyj-ulun-oliver-stoun1/",
+      "destination": "/ru/catalog/oolong-oliver-stone/",
+      "statusCode": 301
+    },
+    {
+      "source": "/-gaba-tajna-drakona-tolko-optom-napishite-nam-i-my-vyshlem-prajs-list",
+      "destination": "/ru/catalog/gaba-dragon-secret/",
+      "statusCode": 301
+    },
+    {
+      "source": "/-gaba-tajna-drakona-tolko-optom-napishite-nam-i-my-vyshlem-prajs-list/",
+      "destination": "/ru/catalog/gaba-dragon-secret/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-pobeditel-2025-pyat-zvyozd",
+      "destination": "/ru/catalog/gaba-winner-2025/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-pobeditel-2025-pyat-zvyozd/",
+      "destination": "/ru/catalog/gaba-winner-2025/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-pobeditel-2025-pyat-zvyozd1",
+      "destination": "/ru/catalog/gaba-winner-2025/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-pobeditel-2025-pyat-zvyozd1/",
+      "destination": "/ru/catalog/gaba-winner-2025/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-alishan-belaya-smorodina",
+      "destination": "/ru/catalog/gaba-white-currant/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-alishan-belaya-smorodina/",
+      "destination": "/ru/catalog/gaba-white-currant/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-alishan-belaya-smorodina1",
+      "destination": "/ru/catalog/gaba-white-currant/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-alishan-belaya-smorodina1/",
+      "destination": "/ru/catalog/gaba-white-currant/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-zvezda-vostoka-",
+      "destination": "/ru/catalog/gaba-eastern-star/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-zvezda-vostoka-/",
+      "destination": "/ru/catalog/gaba-eastern-star/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-zvezda-vostoka-1",
+      "destination": "/ru/catalog/gaba-eastern-star/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gaba-zvezda-vostoka-1/",
+      "destination": "/ru/catalog/gaba-eastern-star/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gabagaba-dusha-tajvanya-dikorastushij-sort-",
+      "destination": "/ru/catalog/gaba-soul-of-taiwan/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gabagaba-dusha-tajvanya-dikorastushij-sort-/",
+      "destination": "/ru/catalog/gaba-soul-of-taiwan/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shu-puer-7572-2005-g-menghajskaya-klassika",
+      "destination": "/ru/catalog/shu-7572-2005/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shu-puer-7572-2005-g-menghajskaya-klassika/",
+      "destination": "/ru/catalog/shu-7572-2005/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shu-puer-7572-2005-g-menghajskaya-klassika1",
+      "destination": "/ru/catalog/shu-7572-2005/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shu-puer-7572-2005-g-menghajskaya-klassika1/",
+      "destination": "/ru/catalog/shu-7572-2005/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shu-puer-da-yi-2005-goda-recept-0562",
+      "destination": "/ru/catalog/shu-0562-2005/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shu-puer-da-yi-2005-goda-recept-0562/",
+      "destination": "/ru/catalog/shu-0562-2005/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shu-puer-da-yi-2005-goda-recept-05621",
+      "destination": "/ru/catalog/shu-0562-2005/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shu-puer-da-yi-2005-goda-recept-05621/",
+      "destination": "/ru/catalog/shu-0562-2005/",
+      "statusCode": 301
+    },
+    {
+      "source": "/dayi-7542-2009-partiya-901-tajvanskoe-hranenie",
+      "destination": "/ru/catalog/dayi-7542-2009/",
+      "statusCode": 301
+    },
+    {
+      "source": "/dayi-7542-2009-partiya-901-tajvanskoe-hranenie/",
+      "destination": "/ru/catalog/dayi-7542-2009/",
+      "statusCode": 301
+    },
+    {
+      "source": "/dayi-7542-2009-partiya-901-tajvanskoe-hranenie1",
+      "destination": "/ru/catalog/dayi-7542-2009/",
+      "statusCode": 301
+    },
+    {
+      "source": "/dayi-7542-2009-partiya-901-tajvanskoe-hranenie1/",
+      "destination": "/ru/catalog/dayi-7542-2009/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chaj-shen-puer-dai-dayi-recept-7542-partiya-601",
+      "destination": "/ru/catalog/sheng-7542-2006/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chaj-shen-puer-dai-dayi-recept-7542-partiya-601/",
+      "destination": "/ru/catalog/sheng-7542-2006/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chaj-shen-puer-dai-dayi-recept-7542-partiya-6011",
+      "destination": "/ru/catalog/sheng-7542-2006/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chaj-shen-puer-dai-dayi-recept-7542-partiya-6011/",
+      "destination": "/ru/catalog/sheng-7542-2006/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shen-puer-dai-dayi-recept-7432",
+      "destination": "/ru/catalog/sheng-7432-2006/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shen-puer-dai-dayi-recept-7432/",
+      "destination": "/ru/catalog/sheng-7432-2006/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shen-puer-dai-dayi-recept-74321",
+      "destination": "/ru/catalog/sheng-7432-2006/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shen-puer-dai-dayi-recept-74321/",
+      "destination": "/ru/catalog/sheng-7432-2006/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tu-lin-shu-puer-2004-tajvanskoe-hranenie",
+      "destination": "/ru/catalog/tulin-2004/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tu-lin-shu-puer-2004-tajvanskoe-hranenie/",
+      "destination": "/ru/catalog/tulin-2004/",
+      "statusCode": 301
+    },
+    {
+      "source": "/redkij-shen-puer-1980-h",
+      "destination": "/ru/catalog/aged-sheng-1980s/",
+      "statusCode": 301
+    },
+    {
+      "source": "/redkij-shen-puer-1980-h/",
+      "destination": "/ru/catalog/aged-sheng-1980s/",
+      "statusCode": 301
+    },
+    {
+      "source": "/rare-aged-sheng-pu-erh-from-the-1980s",
+      "destination": "/catalog/aged-sheng-1980s/",
+      "statusCode": 301
+    },
+    {
+      "source": "/rare-aged-sheng-pu-erh-from-the-1980s/",
+      "destination": "/catalog/aged-sheng-1980s/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shen-puer-syaguan-tocha-2004-sila-i-yarost-smyagchyonnye-vremenem",
+      "destination": "/ru/catalog/?cat=puerh",
+      "statusCode": 301
+    },
+    {
+      "source": "/shen-puer-syaguan-tocha-2004-sila-i-yarost-smyagchyonnye-vremenem/",
+      "destination": "/ru/catalog/?cat=puerh",
+      "statusCode": 301
+    },
+    {
+      "source": "/premium-single-origin-taiwanese-tea",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/premium-single-origin-taiwanese-tea/",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/premium-single-origin-taiwanese-tea-1",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/premium-single-origin-taiwanese-tea-1/",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/premium-taiwanese-single-origin-tea",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/premium-taiwanese-single-origin-tea/",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/premium-handcrafted-taiwanese-tea",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/premium-handcrafted-taiwanese-tea/",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/exquisite-handcrafted-premium-teas",
+      "destination": "/catalog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/exquisite-handcrafted-premium-teas/",
+      "destination": "/catalog/",
+      "statusCode": 301
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+RewriteEngine On
+
+# --- HTTPS ---
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --- 301: старые URL сайта на Website Builder ---
+
+# Разделы
+RewriteRule ^o-nas/?$              /ru/about/            [R=301,L]
+RewriteRule ^kontakty/?$           /ru/contact/          [R=301,L]
+RewriteRule ^chaj/?$               /ru/catalog/          [R=301,L]
+RewriteRule ^shen-puer/?$          /ru/catalog/?cat=puerh [R=301,L]
+RewriteRule ^english/?$            /                     [R=301,L]
+RewriteRule ^english-products/?$   /catalog/             [R=301,L]
+
+# Блог
+RewriteRule ^chto-takoe-ulun/?$    /ru/blog/chto-takoe-ulun/ [R=301,L]
+RewriteRule ^svyaz-mezhdu-stressom-zdorovem-kozhi-i-ezhednevnymi-ritualami/?$ /ru/blog/svyaz-mezhdu-stressom-zdorovem-kozhi-i-ezhednevnymi-ritualami/ [R=301,L]
+RewriteRule ^taivanskii-chai-regiony-osobennosti-i-pryamye-postavki-ot-fermerov/?$ /ru/blog/taivanskii-chai-regiony-osobennosti-i-pryamye-postavki-ot-fermerov/ [R=301,L]
+
+# Улуны
+RewriteRule ^vostochnaya-krasavica/?$          /ru/catalog/oriental-beauty/       [R=301,L]
+RewriteRule ^baochzhun/?$                      /ru/catalog/baozhong/              [R=301,L]
+RewriteRule ^legendarnyj-don-din-hram-oblakov/?$ /ru/catalog/dong-ding-cloud-temple/ [R=301,L]
+RewriteRule ^foshoushan-ulun-fushoushan-1/?$   /ru/catalog/fushoushan-oolong/     [R=301,L]
+RewriteRule ^foshoushan-ulun-fushoushan-/?$    /ru/catalog/fushoushan-oolong/     [R=301,L]
+RewriteRule ^temnyj-ulun-legendy-imperatora1/?$ /ru/catalog/oolong-emperor-legends/ [R=301,L]
+RewriteRule ^temnyj-ulun-legendy-imperatora/?$  /ru/catalog/oolong-emperor-legends/ [R=301,L]
+RewriteRule ^temnyj-ulun-oliver-stoun1/?$      /ru/catalog/oolong-oliver-stone/   [R=301,L]
+RewriteRule ^temnyj-ulun-oliver-stoun/?$       /ru/catalog/oolong-oliver-stone/   [R=301,L]
+
+# ГАБА
+RewriteRule ^-gaba-tajna-drakona-tolko-optom-napishite-nam-i-my-vyshlem-prajs-list/?$ /ru/catalog/gaba-dragon-secret/ [R=301,L]
+RewriteRule ^gaba-pobeditel-2025-pyat-zvyozd1/?$ /ru/catalog/gaba-winner-2025/    [R=301,L]
+RewriteRule ^gaba-pobeditel-2025-pyat-zvyozd/?$  /ru/catalog/gaba-winner-2025/    [R=301,L]
+RewriteRule ^gaba-alishan-belaya-smorodina1/?$   /ru/catalog/gaba-white-currant/  [R=301,L]
+RewriteRule ^gaba-alishan-belaya-smorodina/?$    /ru/catalog/gaba-white-currant/  [R=301,L]
+RewriteRule ^gaba-zvezda-vostoka-1/?$            /ru/catalog/gaba-eastern-star/   [R=301,L]
+RewriteRule ^gaba-zvezda-vostoka-/?$             /ru/catalog/gaba-eastern-star/   [R=301,L]
+RewriteRule ^gabagaba-dusha-tajvanya-dikorastushij-sort-/?$ /ru/catalog/gaba-soul-of-taiwan/ [R=301,L]
+
+# Пуэры
+RewriteRule ^shu-puer-7572-2005-g-menghajskaya-klassika1/?$ /ru/catalog/shu-7572-2005/ [R=301,L]
+RewriteRule ^shu-puer-7572-2005-g-menghajskaya-klassika/?$  /ru/catalog/shu-7572-2005/ [R=301,L]
+RewriteRule ^shu-puer-da-yi-2005-goda-recept-05621/?$ /ru/catalog/shu-0562-2005/ [R=301,L]
+RewriteRule ^shu-puer-da-yi-2005-goda-recept-0562/?$  /ru/catalog/shu-0562-2005/ [R=301,L]
+RewriteRule ^dayi-7542-2009-partiya-901-tajvanskoe-hranenie1/?$ /ru/catalog/dayi-7542-2009/ [R=301,L]
+RewriteRule ^dayi-7542-2009-partiya-901-tajvanskoe-hranenie/?$  /ru/catalog/dayi-7542-2009/ [R=301,L]
+RewriteRule ^chaj-shen-puer-dai-dayi-recept-7542-partiya-6011/?$ /ru/catalog/sheng-7542-2006/ [R=301,L]
+RewriteRule ^chaj-shen-puer-dai-dayi-recept-7542-partiya-601/?$  /ru/catalog/sheng-7542-2006/ [R=301,L]
+RewriteRule ^shen-puer-dai-dayi-recept-74321/?$ /ru/catalog/sheng-7432-2006/ [R=301,L]
+RewriteRule ^shen-puer-dai-dayi-recept-7432/?$  /ru/catalog/sheng-7432-2006/ [R=301,L]
+RewriteRule ^tu-lin-shu-puer-2004-tajvanskoe-hranenie/?$ /ru/catalog/tulin-2004/ [R=301,L]
+RewriteRule ^redkij-shen-puer-1980-h/?$        /ru/catalog/aged-sheng-1980s/ [R=301,L]
+RewriteRule ^rare-aged-sheng-pu-erh-from-the-1980s/?$ /catalog/aged-sheng-1980s/ [R=301,L]
+
+# Без прямой пары в новом каталоге -> в каталог
+RewriteRule ^shen-puer-syaguan-tocha-2004-sila-i-yarost-smyagchyonnye-vremenem/?$ /ru/catalog/?cat=puerh [R=301,L]
+RewriteRule ^premium-single-origin-taiwanese-tea-1/?$   /catalog/ [R=301,L]
+RewriteRule ^premium-single-origin-taiwanese-tea/?$     /catalog/ [R=301,L]
+RewriteRule ^premium-taiwanese-single-origin-tea/?$     /catalog/ [R=301,L]
+RewriteRule ^premium-handcrafted-taiwanese-tea/?$       /catalog/ [R=301,L]
+RewriteRule ^exquisite-handcrafted-premium-teas/?$      /catalog/ [R=301,L]
+
+# --- Чистые URL ---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.*)$ $1/index.html [L]
+
+ErrorDocument 404 /404.html

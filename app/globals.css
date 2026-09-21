@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Marcellus&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Оригинальная палитра сайта estastea.com */
+  --bg-primary: #FAF7F2;
+  --bg-secondary: #F2EDE4;
+  --bg-card: #FFFFFF;
+  --bg-dark: #0D141A;
+  --bg-dark-surface: #161A1C;
+  --bg-dark-card: #1A3C2C;
+
+  --text-main: #1D1E20;
+  --text-muted: #727586;
+  --text-subtle: #8E909A;
+  --text-inverse: #FFFFFF;
+  --text-inverse-muted: #D5DFE6;
+
+  /* Фирменные цвета оригинального сайта */
+  --brand-forest: #1A3C2C;        /* rgb(26, 60, 44) - основной темно-зеленый */
+  --brand-forest-deep: #0D141A;   /* rgb(13, 20, 26) - глубокий темный */
+  --brand-emerald: #235B46;       /* rgb(35, 91, 70) */
+  --brand-sage: #4A7C5E;          /* rgb(74, 124, 94) - акцентный зеленый кнопок */
+  --brand-mint: #DFF4E2;          /* rgb(223, 244, 226) - светлый мятный бейджей */
+  --brand-gold: #FFFFFF;          /* заменено на белый цвет по запросу */
+  --brand-gold-light: #F4F6F4;
+  --brand-gold-soft: #FFFFFF;
+  --brand-gold-glow: rgba(255, 255, 255, 0.15);
+
+  --border-light: rgba(26, 60, 44, 0.1);
+  --border-hover: rgba(26, 60, 44, 0.25);
+  --border-gold: rgba(255, 255, 255, 0.2);
+  --border-dark: rgba(255, 255, 255, 0.12);
+
+  /* =========================================================
+     СИСТЕМА 3 ВИДОВ ТЕКСТА (3-TIER TYPOGRAPHY SYSTEM)
+     1. Заголовок (Title / Heading) -> Marcellus Serif
+     2. Подзаголовок / Кнопка / Метка (Subtitle / Kicker / UI) -> Plus Jakarta Sans SemiBold
+     3. Основной текст / Описание (Body Text / Paragraph) -> Plus Jakarta Sans Regular
+     ========================================================= */
+  --font-title: 'Marcellus', Georgia, serif;
+  --font-lora: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-display: 'Marcellus', Georgia, serif;
+  --font-ui: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Размерные стандарты для 3 видов текста */
+  --size-title-hero: clamp(1.75rem, 3.2vw, 2.6rem);
+  --size-title-section: clamp(1.6rem, 2.8vw, 2.2rem);
+  --size-title-card: 1.3rem;
+
+  --size-subtitle: 0.85rem;
+  --size-kicker: 0.75rem;
+
+  --size-body: 1rem;
+  --size-body-lead: 1.125rem;
+
+  --header-h: 74px;
+  --ribbon-h: 38px;
+  --max-w: 1260px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 2px 8px rgba(13, 30, 23, 0.04);
+  --shadow-md: 0 10px 30px rgba(13, 30, 23, 0.07);
+  --shadow-lg: 0 20px 50px rgba(13, 30, 23, 0.12);
+  --shadow-hover: 0 24px 56px rgba(13, 30, 23, 0.14);
+
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s var(--ease-smooth);
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  color: inherit;
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+  font-style: italic;
+}
+
+.container {
+  width: min(var(--max-w), calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+.container-narrow {
+  width: min(840px, calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 99999;
+  padding: 0.85rem 1.4rem;
+  background: var(--brand-forest);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* Badges & Tags */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--brand-forest);
+  box-shadow: var(--shadow-sm);
+}
+
+.badge-pill-gold {
+  background: #FFFFFF;
+  border-color: rgba(26, 60, 44, 0.15);
+  color: var(--brand-forest);
+}
+
+.badge-pill-accent {
+  background: #FFFFFF;
+  border-color: rgba(26, 60, 44, 0.15);
+  color: var(--brand-forest);
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brand-sage);
+  margin-bottom: 0.75rem;
+}
+
+.kicker::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 1.5px;
+  background: var(--brand-sage);
+}
+
+/* Button System */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 50px;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-spring);
+  text-align: center;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: var(--brand-forest);
+  color: #FFFFFF;
+  box-shadow: 0 4px 18px rgba(22, 60, 46, 0.25);
+}
+
+.btn-primary:hover {
+  background: var(--brand-emerald);
+  box-shadow: 0 8px 26px rgba(22, 60, 46, 0.35);
+  transform: translateY(-2px);
+  color: #FFFFFF;
+}
+
+.btn-gold {
+  background: #FFFFFF;
+  color: var(--brand-forest-deep);
+  border: 1px solid rgba(26, 60, 44, 0.12);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.btn-gold:hover {
+  background: #F4F6F4;
+  color: var(--brand-forest-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--border-hover);
+  color: var(--brand-forest);
+}
+
+.btn-outline:hover {
+  background: var(--brand-forest);
+  border-color: var(--brand-forest);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-outline-white {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--border-dark);
+  color: #FFFFFF;
+  backdrop-filter: blur(8px);
+}
+
+.btn-outline-white:hover {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  color: var(--brand-forest-deep);
+  transform: translateY(-2px);
+}
+
+/* Layout Utilities */
+.section-spacer {
+  padding: 6rem 0;
+}
+
+.section-spacer-sm {
+  padding: 4rem 0;
+}
+
+.page-header {
+  padding: 5rem 0 3.5rem;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.page-header h1 {
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--brand-forest-deep);
+}
+
+.page-header p {
+  color: var(--text-muted);
+  font-size: 1.12rem;
+  max-width: 60ch;
+  line-height: 1.7;
+}
+
+.grid-2 {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid-3 {
+  display: grid;
+  gap: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-4 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

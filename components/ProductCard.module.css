@@ -1,0 +1,202 @@
+.card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s var(--ease-spring);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-hover);
+}
+
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mediaWrap {
+  position: relative;
+  aspect-ratio: 4 / 4.8;
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-spring);
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.badgesOverlay {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  right: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  pointer-events: none;
+}
+
+/* Type 2: Badges (Подзаголовок / Метка) */
+.catBadge {
+  background: rgba(13, 30, 23, 0.88);
+  color: #FFFFFF;
+  backdrop-filter: blur(8px);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-ui);
+  font-size: var(--size-kicker);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.altBadge {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--brand-forest);
+  backdrop-filter: blur(8px);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-ui);
+  font-size: var(--size-kicker);
+  font-weight: 700;
+}
+
+.goldBadge {
+  background: #FFFFFF;
+  color: var(--brand-forest-deep);
+  border: 1px solid rgba(26, 60, 44, 0.12);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-ui);
+  font-size: var(--size-kicker);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.body {
+  padding: 1.35rem 1.35rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Type 2: Origin Row */
+.originRow {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--brand-sage);
+  font-family: var(--font-ui);
+  font-size: var(--size-kicker);
+  font-weight: 600;
+  margin-bottom: 0.45rem;
+}
+
+.pinIcon {
+  flex-shrink: 0;
+  color: var(--brand-sage);
+}
+
+/* Type 1: Title */
+.title {
+  font-family: var(--font-title);
+  font-size: var(--size-title-card);
+  color: var(--brand-forest-deep);
+  margin-bottom: 0.2rem;
+  line-height: 1.22;
+  transition: color 0.2s;
+}
+
+.card:hover .title {
+  color: var(--brand-emerald);
+}
+
+/* Type 3: Subtitle / Description */
+.subtitle {
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  font-size: var(--size-subtitle);
+  margin-bottom: 1rem;
+}
+
+.notesBox {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.8rem;
+  margin-top: auto;
+  margin-bottom: 1.1rem;
+}
+
+/* Type 2: Notes Label */
+.notesLabel {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: var(--size-kicker);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--brand-sage);
+  margin-bottom: 0.15rem;
+}
+
+/* Type 3: Notes Text */
+.notesText {
+  font-family: var(--font-body);
+  color: var(--text-main);
+  font-size: var(--size-subtitle);
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.footerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-light);
+}
+
+/* Type 2: View Button & Wholesale Pill */
+.viewBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-ui);
+  font-size: var(--size-subtitle);
+  font-weight: 700;
+  color: var(--brand-forest);
+  transition: gap 0.2s;
+}
+
+.card:hover .viewBtn {
+  color: var(--brand-emerald);
+  gap: 0.65rem;
+}
+
+.wholesalePill {
+  font-family: var(--font-ui);
+  font-size: var(--size-kicker);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+}

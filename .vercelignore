@@ -1,0 +1,15 @@
+# EstasTea — Next.js site
+.DS_Store
+node_modules
+dist
+.next
+out
+_scratch
+.vercel
+*.zip
+/*.png
+/*.jpg
+/*.jpeg
+tsconfig.tsbuildinfo
+.obsidian-context
+.omc

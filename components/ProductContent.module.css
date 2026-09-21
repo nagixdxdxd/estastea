@@ -1,0 +1,304 @@
+.productPage {
+  background: var(--bg-primary);
+}
+
+.breadcrumbBar {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-primary);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-forest);
+  transition: gap 0.2s;
+}
+
+.backLink:hover {
+  color: var(--brand-emerald);
+  gap: 0.75rem;
+}
+
+/* Showcase */
+.showcaseSection {
+  padding: 3.5rem 0 4rem;
+}
+
+.showcaseGrid {
+  display: grid;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+@media (min-width: 992px) {
+  .showcaseGrid {
+    grid-template-columns: 1fr 1.15fr;
+  }
+}
+
+.galleryCard {
+  position: sticky;
+  top: calc(var(--header-h) + 2rem);
+}
+
+.imageWrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4 / 4.8;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Carousel (horizontal scroll) ─────────────────────────────── */
+.carouselWrap {
+  position: sticky;
+  top: calc(var(--header-h) + 2rem);
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--brand-sage) var(--border-light);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  /* aspect-ratio matches single image: 4/4.8 */
+  aspect-ratio: 4 / 4.8;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 4px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: var(--border-light);
+  border-radius: 2px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: var(--brand-sage);
+  border-radius: 2px;
+}
+
+.carouselSlide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  aspect-ratio: 4 / 4.8;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.badgesWrap {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.detailsCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerInfo {
+  margin-bottom: 1.5rem;
+}
+
+.productTitle {
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  color: var(--brand-forest-deep);
+  margin-top: 0.35rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.15;
+}
+
+.productSubtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.tastingBox {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--brand-forest);
+  border-radius: var(--radius-sm);
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.tastingLabel {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brand-sage);
+  margin-bottom: 0.35rem;
+}
+
+.tastingNotes {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--brand-forest-deep);
+  line-height: 1.45;
+}
+
+.descriptionProse {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 2.25rem;
+}
+
+.actionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+/* Specs */
+.specsSection {
+  background: var(--bg-secondary);
+}
+
+.specsContainer {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.specsHeader {
+  margin-bottom: 1.75rem;
+}
+
+.specsHeader h2 {
+  font-size: 1.8rem;
+  color: var(--brand-forest-deep);
+  margin-top: 0.35rem;
+}
+
+.specsGrid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .specsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .specsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.specCard {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 1.2rem;
+}
+
+.specLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand-gold);
+  margin-bottom: 0.35rem;
+}
+
+.specValue {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--brand-forest-deep);
+}
+
+/* Brewing */
+.brewingSection {
+  background: var(--bg-secondary);
+  padding-bottom: 4rem;
+}
+
+.brewingCard {
+  background: linear-gradient(135deg, var(--bg-dark-surface) 0%, var(--bg-dark) 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  border: 1px solid var(--border-dark);
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .brewingCard {
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
+.brewingIcon {
+  font-size: 2.5rem;
+}
+
+.brewingTitle {
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  margin-top: 0.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.brewingText {
+  color: var(--text-inverse-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Related */
+.relatedSection {
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-light);
+}
+
+.relatedHeader {
+  margin-bottom: 2.5rem;
+}
+
+.relatedHeader h2 {
+  font-size: 2.2rem;
+  color: var(--brand-forest-deep);
+  margin-top: 0.35rem;
+}

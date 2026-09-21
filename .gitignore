@@ -1,0 +1,36 @@
+# dependencies
+node_modules/
+
+# builds
+.next/
+out/
+dist/
+.astro/
+
+# misc / personal
+.DS_Store
+_scratch/
+.vercel/
+.omc/
+.obsidian-context/
+
+# root-level scratch files (any png/jpg/zip/docx in project root)
+/*.png
+/*.jpg
+/*.jpeg
+/*.zip
+/*.docx
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# logs
+*.log
+npm-debug.log*
+
+# env
+.env
+.env.local
+.env*.local
+
+# build artifacts only — public/ source assets are committed
