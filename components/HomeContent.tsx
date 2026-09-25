@@ -31,11 +31,11 @@ export function HomeContent({ lang }: Props) {
       <section className={styles.heroSection}>
         <div className={styles.heroBackdrop}>
           <img
-            src="/images/scenes/hero.jpg?v=3"
+            src="/images/scenes/hero.jpg?v=2"
             alt="Taiwan High Mountain Tea Gardens"
             className={styles.heroBgImg}
-            width={1280}
-            height={720}
+            width={2800}
+            height={2156}
             loading="eager"
             fetchPriority="high"
           />
