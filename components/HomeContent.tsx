@@ -31,11 +31,11 @@ export function HomeContent({ lang }: Props) {
       <section className={styles.heroSection}>
         <div className={styles.heroBackdrop}>
           <img
-            src="/images/scenes/hero.jpg?v=2"
+            src="/images/scenes/hero.jpg?v=3"
             alt="Taiwan High Mountain Tea Gardens"
             className={styles.heroBgImg}
-            width={2800}
-            height={2156}
+            width={1280}
+            height={720}
             loading="eager"
             fetchPriority="high"
           />
@@ -234,7 +234,7 @@ export function HomeContent({ lang }: Props) {
         <div className={`container ${styles.storyGrid}`}>
           <div className={styles.storyImagesWrap}>
             <div className={styles.storyMainImg}>
-              <img src="/images/scenes/farm.png" alt="Taiwanese tea farm" width={800} height={600} loading="lazy" decoding="async" />
+              <img src="/images/about/hero-garden.jpg" alt="Taiwanese tea farm" width={1024} height={768} loading="lazy" decoding="async" />
             </div>
             <div className={styles.storyAccentImg}>
               <img src="/images/scenes/hills.png" alt="Formosa mountain hills" width={600} height={450} loading="lazy" decoding="async" />

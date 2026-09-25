@@ -30,6 +30,11 @@ export const producers: Producer[] = [
     featured: true,
     photos: [
       {
+        src: '/images/about/producer-garden.jpg',
+        ru: 'В чайном саду с Мастером Джеком',
+        en: 'In the tea garden with Master Jack',
+      },
+      {
         src: '/images/about/field-terraces-mist.jpg',
         ru: 'Чайные террасы в тумане, Шань Лин Си',
         en: 'Misty tea terraces, Shan Lin Xi',

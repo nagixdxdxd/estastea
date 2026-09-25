@@ -83,7 +83,7 @@ export const copyBlocks = {
     beyondPhotos: [
       { src: IMG.travelTaiwan, caption: 'Путешествуем по Тайваню с Мастером Джеком' },
       { src: IMG.producerMeeting, caption: 'Встреча с давним партнёром' },
-      { src: IMG.producerGarden, caption: 'В чайном саду с производителем' },
+      { src: IMG.producerGarden, caption: 'В чайном саду с Мастером Джеком' },
     ],
 
     selectKicker: 'Как мы отбираем',
@@ -158,7 +158,7 @@ export const copyBlocks = {
     beyondPhotos: [
       { src: IMG.travelTaiwan, caption: 'Travelling around Taiwan with Master Jack' },
       { src: IMG.producerMeeting, caption: 'Meeting a long-term partner' },
-      { src: IMG.producerGarden, caption: 'In the tea garden with a producer' },
+      { src: IMG.producerGarden, caption: 'In the tea garden with Master Jack' },
     ],
 
     selectKicker: 'How we select',
