@@ -557,6 +557,10 @@
   .mediaGrid {
     grid-template-columns: 1.35fr 1fr;
   }
+
+  .mediaGrid.mediaGridSingle {
+    grid-template-columns: 1fr;
+  }
 }
 
 .videoBox {

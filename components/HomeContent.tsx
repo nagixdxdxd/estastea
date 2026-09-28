@@ -266,8 +266,9 @@ export function HomeContent({ lang }: Props) {
 
       {/* 4. Video Experience & Cupping Testimonial */}
       <section className={`section-spacer ${styles.mediaSection}`}>
-        <div className={`container ${styles.mediaGrid}`}>
+        <div className={`container ${styles.mediaGrid} ${lang === 'ru' ? '' : styles.mediaGridSingle}`}>
           {/* Left: Video */}
+          {lang === 'ru' && (
           <div className={styles.videoBox}>
             <div className={styles.videoMeta}>
               <span className="kicker">{lang === 'ru' ? 'Атмосфера терруара' : 'Origin Cinema'}</span>
@@ -283,6 +284,7 @@ export function HomeContent({ lang }: Props) {
               />
             </div>
           </div>
+          )}
 
           {/* Right: Testimonial */}
           <div className={styles.testimonialBox}>
