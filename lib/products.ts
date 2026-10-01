@@ -792,6 +792,40 @@ export const products: Product[] = [
     },
   },
   {
+    slug: 'golden-citrus-reserve',
+    category: 'aged',
+    image: '/images/products/golden-citrus-reserve-1.jpg',
+    images: [
+      '/images/products/golden-citrus-reserve-1.jpg',
+      '/images/products/golden-citrus-reserve-2.jpg',
+    ],
+    status: 'new',
+    ru: {
+      name: 'Золотой цитрусовый резерв',
+      subtitle: 'Мисянь Хун Ча',
+      origin: 'Тайвань',
+      style: 'Выдержанный красный чай в цельном плоде',
+      notes: 'Красный чай, цитрус',
+      description: [
+        'Выдержанный красный чай внутри цельного плода.',
+      ],
+      seoTitle: 'Золотой цитрусовый резерв · Мисянь Хун Ча | EstasTea',
+      seoDesc: 'Золотой цитрусовый резерв — выдержанный красный чай Мисянь Хун Ча внутри цельного плода. Опт и B2B-поставки с Тайваня.',
+    },
+    en: {
+      name: 'Golden Citrus Reserve',
+      subtitle: 'Mi Xian Hong Cha',
+      origin: 'Taiwan',
+      style: 'Whole-fruit aged red tea',
+      notes: 'Red tea, citrus',
+      description: [
+        'Whole-fruit aged tea: aged Mi Xian red tea inside a whole citrus fruit.',
+      ],
+      seoTitle: 'Golden Citrus Reserve · Mi Xian Hong Cha | EstasTea',
+      seoDesc: 'Golden Citrus Reserve — whole-fruit aged Mi Xian red tea. Wholesale and B2B supply from Taiwan.',
+    },
+  },
+  {
     slug: 'mi-shian-hon-cha-pinglin-2026',
     category: 'competition',
     image: '/images/products/mi-shian-hon-cha-pinglin-2026.jpg',
