@@ -9,6 +9,7 @@ import aboutStyles from './AboutContent.module.css';
 import styles from './HomeContent.module.css';
 
 const NEW_ARRIVALS_ORDER = [
+  'golden-citrus-reserve',
   'gaba-eastern-riddle',
   'white-alishan-n23-qing-yun',
   'ruby-18-sun-moon-lake',
