@@ -857,35 +857,6 @@ export const products: Product[] = [
     },
   },
   {
-    slug: 'mi-xian-red-bronze-hualien',
-    category: 'competition',
-    image: '/images/products/mi-xian-red-bronze-hualien.jpg',
-    ru: {
-      name: 'Красный Мисянь · Хуалянь · Бронзовая медаль',
-      subtitle: 'Mi Xian Hong Cha · Bronze Medal',
-      origin: 'Тайвань, Хуалянь',
-      style: 'Конкурсный красный чай (Мисянь)',
-      notes: 'Бронзовая медаль конкурса уезда Хуалянь',
-      description: [
-        'Конкурсный красный чай Мисянь из Хуаляня — бронзовая медаль конкурса уезда Хуалянь.',
-      ],
-      seoTitle: 'Красный Мисянь · Хуалянь · Бронзовая медаль | EstasTea',
-      seoDesc: 'Красный Мисянь из Хуаляня — конкурсный чай, бронзовая медаль конкурса уезда Хуалянь. Опт и B2B-поставки с Тайваня.',
-    },
-    en: {
-      name: 'Hualien Mi Xian Red Tea · Bronze Medal',
-      subtitle: 'Honey Scented Black Tea · Bronze Medal',
-      origin: 'Taiwan, Hualien',
-      style: 'Competition red tea (Mi Xian)',
-      notes: 'Bronze Award, Hualien County competition',
-      description: [
-        'A competition Mi Xian (honey-scented) red tea from Hualien, awarded Bronze at the Hualien County tea competition.',
-      ],
-      seoTitle: 'Hualien Mi Xian Red Tea · Bronze Medal | EstasTea',
-      seoDesc: 'Hualien Mi Xian red tea — Bronze Award at the Hualien County competition. Wholesale and B2B supply from Taiwan.',
-    },
-  },
-  {
     slug: 'gaba-5-star-lishan',
     category: 'gaba-special',
     image: '/images/products/gaba-5-star-lishan-1.jpg',
