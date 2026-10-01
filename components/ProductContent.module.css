@@ -38,11 +38,12 @@
   .showcaseGrid {
     grid-template-columns: 1fr 1.15fr;
   }
-}
 
-.galleryCard {
-  position: sticky;
-  top: calc(var(--header-h) + 2rem);
+  .galleryCard,
+  .carouselWrap {
+    position: sticky;
+    top: calc(var(--header-h) + 2rem);
+  }
 }
 
 .imageWrap {
@@ -62,11 +63,6 @@
 }
 
 /* ── Carousel (horizontal scroll) ─────────────────────────────── */
-.carouselWrap {
-  position: sticky;
-  top: calc(var(--header-h) + 2rem);
-}
-
 .carousel {
   display: flex;
   overflow-x: auto;
